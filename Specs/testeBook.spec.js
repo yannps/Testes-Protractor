@@ -6,12 +6,13 @@ import { browser, element, ExpectedConditions } from "protractor";
 import { ExpectedHelper } from "../helpers/expected-helper";
 import { Login } from "../page-objects/Login.po";
 import { ActionHelper } from "../helpers/action-helper";
+import { NewAdress } from "../page-objects/NewAdress.po";
 
 const scenarioHelper = new ScenarioHelper();
 const welcomePO = new Welcome();
 const expectedHelper = new ExpectedHelper();
 const loginPO = new Login();
-
+const newAdress = new NewAdress();
 
 beforeAll(() =>{
     browser.waitForAngularEnabled(false);
